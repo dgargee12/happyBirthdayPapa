@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@70B&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background-color: #230438;
+}
+
+#top {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 80vh;
+}
+
+#top h2 {
+   position: relative;
+   font-size: 12vw;
+   color: #230438;
+   -webkit-text-stroke: 0.3vw #5e1c8a;
+   text-transform: uppercase;
+}
+
+#top h2::before {
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   color: #c68feb;
+   -webkit-text-stroke: 0vw #230438;
+   border-right: 2px solid #c68feb;
+   overflow: hidden;
+   animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+   0%,
+   10%,
+   100% {
+      width: 0;
+   }
+   70%,
+   90% {
+      width: 100%;
+   }
+}
+
+video {
+   display: inline-block;
+   position: absolute;
+   outline: none;
+   align-items: center;
+   height: 90rem;
+   margin-left: 5%;
+}
+
+#box {
+   margin-right: 2%;
+   height: 50rem;
+}
+
+#blns {
+   height: 90rem;
+   margin-top: 3%;
+}
+
+#rght-blns {
+   height: 90rem;
+   transform: scaleX(-1);
+   float: right;
+   margin-top: 3%;
+}
+
+#play {
+   margin-left: 10%;
+   align-items: center;
+   width: 20rem;
+}
+
+#ques {
+   font-size: 8rem;
+   margin: 5% 0 0 37%;
+   color: whitesmoke;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+   width: 25rem;
+   background-color: whitesmoke;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   border: none;
+   padding: 1%;
+   font-size: 7rem;
+   font-weight: bold;
+   border-radius: 3rem;
+   box-shadow: 10px 10px 10px rgb(240, 190, 255);
+   outline: none;
+   color: rgb(66, 8, 83);
+   cursor: pointer;
+}
+
+button:active {
+   box-shadow: none;
+   position: relative;
+   top: 10px;
+   left: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(66, 8, 83);
+}
+
+#left {
+   margin: 5% 0% 5% 30%;
+}
+
+#rght {
+   margin: 5% 0% 5% 23%;
+}

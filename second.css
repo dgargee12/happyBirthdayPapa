@@ -1,0 +1,104 @@
+body {
+   background-color: black;
+   margin: 0;
+   padding: 0;
+   color: white;
+}
+
+#head {
+   margin-top: 1%;
+   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   color: black;
+   font-family: Brush Script MT, cursive;
+   font-size: 45px;
+   letter-spacing: 2mm;
+   word-spacing: 5mm;
+   text-align: center;
+   cursor: default;
+}
+
+.mem {
+   width: 30%;
+   margin: 1% 0% 1% 2%;
+   text-align: center;
+   display: inline-block;
+   padding: 40px 0px;
+   font-size: 19px;
+   font-family: Calibri;
+}
+
+.content,
+.images {
+   border: 1px solid whitesmoke;
+   cursor: pointer;
+}
+
+.pic {
+   width: 30%;
+   display: inline-block;
+   margin: 1%;
+   text-align: center;
+}
+
+.images img {
+   height: 25rem;
+}
+
+.images {
+   display: none;
+}
+
+#tOne {
+   background-image: linear-gradient(black, rgb(170, 2, 2));
+}
+
+#tTwo {
+   background-image: linear-gradient(black, rgb(228, 148, 0));
+}
+
+#tThree {
+   background-image: linear-gradient(black, rgb(241, 241, 55));
+}
+
+#tFour {
+   background-image: linear-gradient(black, rgb(1, 102, 1));
+}
+
+#tFive {
+   background-image: linear-gradient(black, rgb(2, 2, 138));
+}
+
+#tSix {
+   background-image: linear-gradient(black, rgb(136, 6, 136));
+}
+
+audio {
+   outline: none;
+   margin-left: 15%;
+}
+
+button {
+   width: 10rem;
+   background-image: linear-gradient(to right, black, indigo);
+   float: right;
+   border: none;
+   padding: 1%;
+   font-size: 1.4rem;
+   font-weight: bold;
+   margin-right: 15%;
+   border-radius: 3rem;
+   box-shadow: 2px 2px 2px whitesmoke;
+   outline: none;
+}
+
+button:active {
+   box-shadow: none;
+   position: relative;
+   top: 5px;
+   left: 5px;
+}
+
+a {
+   text-decoration: none;
+   color: whitesmoke;
+}
